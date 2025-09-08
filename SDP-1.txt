@@ -1,0 +1,170 @@
+
+/-------------------------------------/
+Slide 1: Title Slide
+Slide Content
+
+Project Title: Console-Based Game – Connect 4
+
+Course Name & Code
+
+Group Members (Name + ID)
+
+Supervisor’s Name
+
+Script Content
+
+“Assalamu Alaikum. Today we are going to present our software development project. Our project is a console-based Connect 4 game. This project was developed as part of our CSE course. We worked as a team and today we will explain the idea, development process, challenges, and the output of our project.”
+
+/-------------------------------------/
+Slide 2: Introduction
+Slide Content
+
+Game: Connect 4
+
+2-player strategy game
+
+Purpose: learning OOP, logic building, fun project
+
+Script Content
+
+“Our project is a console-based version of the Connect 4 game. Connect 4 is a two-player strategy game where players take turns dropping pieces into a grid. The goal is to connect four of your pieces in a row — horizontally, vertically, or diagonally. We chose this project because it helps us improve logic building, apply programming knowledge, and make learning more fun.”
+
+/-------------------------------------/
+Slide 3: Objectives
+Slide Content
+
+Implement Connect 4 in console
+
+Practice programming logic
+
+Learn teamwork & problem-solving
+
+Script Content
+
+“The main objectives of our project were:
+First, to implement the Connect 4 game in console using programming concepts.
+Second, to practice logic building and apply loops, arrays, and conditions in a real project.
+And finally, to learn team collaboration and problem-solving during the development process.”
+
+/-------------------------------------/
+Slide 4: Game Idea & Features
+Slide Content
+
+Connect 4 rules:
+
+6×7 grid
+
+Two players (X and O)
+
+Win by 4 in a row
+
+Features:
+
+Real-time grid update
+
+Input validation
+
+Declares winner/draw
+
+Script Content
+
+“The idea of the game is based on the original Connect 4 board game. It is played on a 6 by 7 grid. Two players take turns dropping their pieces, represented as X and O. The first player to connect four in a row wins the game.
+Our features include: a real-time updated grid, proper input validation so users don’t give wrong moves, and a winning or draw message at the end of the game.”
+
+Slide 5: System Design
+Slide Content
+
+Language: C++
+
+IDE: VS Code
+
+Game Flow:
+
+Input move
+
+Place piece
+
+Update grid
+
+Check winner
+
+Script Content
+
+“We developed the game using C++ programming language. The IDE we used was [Code::Blocks/VS Code].
+The system design is simple:
+First, the user inputs a column number.
+Next, the program places the piece in the correct position.
+Then the grid updates and displays the new state.
+Finally, the program checks if any player has connected four. If yes, it declares a winner; otherwise, the game continues.”
+
+Slide 6: Implementation
+Slide Content
+
+Main concepts used:
+
+2D arrays (grid storage)
+
+Loops (game turns)
+
+Functions (game logic)
+
+Conditional checks (winner/draw)
+
+Script Content
+
+“In implementation, we used a 2D array to represent the 6×7 grid. Loops were used to control game turns and continuously update the board. Functions were created to separate game logic like placing pieces, checking for a winner, and displaying the grid. Finally, conditions were applied to check whether a player has won, or if the game ended in a draw.”
+
+Slide 7: Output (Demo)
+Slide Content
+
+Console Grid Display
+
+Example: Player X wins
+
+Script Content
+
+“Here you can see the output of our game. The console shows the 6×7 grid. Players select their moves, and the program updates the grid instantly. If a player successfully connects four, the program displays a message like ‘Player X wins!’ Otherwise, if the grid is full and no one wins, it declares a draw.”
+
+Slide 8: Challenges & Solutions
+Slide Content
+
+Grid handling
+
+Checking 4 in a row,4 in a column, 4 in a diagonal
+
+Input validation
+
+Script Content
+
+“We faced some challenges while building the project.
+First, handling the grid updates was tricky because each column had to be filled from the bottom up.
+Second, checking for four consecutive pieces horizontally, vertically, and diagonally required careful logic.
+Third, we had to handle invalid inputs like when a player chose a full column.
+We solved these problems through debugging, step-by-step logic building, and team collaboration.”
+
+
+Slide 9: Future Enhancements
+Slide Content
+
+Add GUI (graphics) 
+
+Single player vs Computer
+
+Online multiplayer
+
+Script Content
+
+“In the future, we plan to extend our project by adding a GUI version with graphics instead of a console grid. Another idea is to add a single-player mode where the player can compete against the computer using AI. Finally, we hope to add online multiplayer support so players can challenge each other from different devices.”
+
+Slide 10: Conclusion
+Slide Content
+
+Learned coding & teamwork
+
+Practical implementation
+
+Thank you
+
+Script Content
+
+“In conclusion, this project helped us improve both coding and teamwork skills. We got real experience in problem-solving, debugging, and implementing an actual game. This Connect 4 project showed us how classroom knowledge can be applied in practical software development. Thank you for listening to our presentation.”
