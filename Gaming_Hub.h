@@ -3,6 +3,7 @@
 
 class Gaming_Hub {
 public:
+    void Sign_In();
     void Tic_Tac_Toa();
     void Conect_4();
 };

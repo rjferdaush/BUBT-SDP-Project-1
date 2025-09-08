@@ -1,11 +1,12 @@
 #include <iostream>
 #include "Gaming_Hub.h"
+#include <fstream>
 using namespace std;
 
 void Gaming_Hub::Conect_4()
 {
     char arr[6][7];
-    int row, col, i, j, r, k = 0;
+    int row, col, i, j, r, k = 0,red=0,blue=0;
 
     // space define
     for (i = 0; i < 6; i++)
@@ -47,6 +48,7 @@ void Gaming_Hub::Conect_4()
                 if (arr[i][j] == 'B' && arr[i][j + 1] == 'B' && arr[i][j + 2] == 'B' && arr[i][j + 3] == 'B')
                 {
                     cout << "Blue Win";
+                    blue++;
                     return;
                 }
             }
@@ -60,6 +62,7 @@ void Gaming_Hub::Conect_4()
                 if (arr[i][j] == 'B' && arr[i + 1][j] == 'B' && arr[i + 2][j] == 'B' && arr[i + 3][j] == 'B')
                 {
                     cout << "Blue Win";
+                    blue++;
                     return;
                 }
             }
@@ -73,6 +76,7 @@ void Gaming_Hub::Conect_4()
                 if (arr[i][j] == 'B' && arr[i + 1][j - 1] == 'B' && arr[i + 2][j - 2] == 'B' && arr[i + 3][j - 3] == 'B')
                 {
                     cout << "Blue Win";
+                    blue++;
                     return;
                 }
             }
@@ -86,6 +90,7 @@ void Gaming_Hub::Conect_4()
                 if (arr[i][j] == 'B' && arr[i + 1][j + 1] == 'B' && arr[i + 2][j + 2] == 'B' && arr[i + 3][j + 3] == 'B')
                 {
                     cout << "Blue Win";
+                    blue++;
                     return;
                 }
             }
@@ -117,6 +122,7 @@ void Gaming_Hub::Conect_4()
                 if (arr[i][j] == 'R' && arr[i][j + 1] == 'R' && arr[i][j + 2] == 'R' && arr[i][j + 3] == 'R')
                 {
                     cout << "Red Win";
+                    red++;
                     return;
                 }
             }
@@ -131,6 +137,7 @@ void Gaming_Hub::Conect_4()
                 if (arr[i][j] == 'R' && arr[i + 1][j] == 'R' && arr[i + 2][j] == 'R' && arr[i + 3][j] == 'R')
                 {
                     cout << "Red Win";
+                    red++;
                     return;
                 }
             }
@@ -194,6 +201,7 @@ void Gaming_Hub::Conect_4()
                 if (arr[i][j] == 'R' && arr[i + 1][j - 1] == 'R' && arr[i + 2][j - 2] == 'R' && arr[i + 3][j - 3] == 'R')
                 {
                     cout << "Red Win";
+                    red++;
                     return;
                 }
             }
@@ -207,6 +215,7 @@ void Gaming_Hub::Conect_4()
                 if (arr[i][j] == 'R' && arr[i + 1][j + 1] == 'R' && arr[i + 2][j + 2] == 'R' && arr[i + 3][j + 3] == 'R')
                 {
                     cout << "Red Win";
+                    red++;
                     return;
                 }
             }
@@ -214,6 +223,15 @@ void Gaming_Hub::Conect_4()
 
         
     }
+
+
+    
+    if(red==1){
+
+
+
+    }
+
 
 
 }
