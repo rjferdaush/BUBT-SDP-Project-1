@@ -1,4 +1,4 @@
-#include<Gaming_Hub.h>
+#include"Gaming_Hub.h"
 #include<iostream>
 #include<fstream>
 using namespace std;
@@ -11,7 +11,7 @@ void Gaming_Hub::Sign_In(){
     cin>>name2;
 
     ofstream singINfile("sing in information.txt",ios::out | ios::app);
-    singINfile<<name1<<count<<endl<<name2<<count<<endl;
+    singINfile<<name1<<endl<<name2<<endl;
     singINfile.close();
 
 }

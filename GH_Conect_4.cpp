@@ -1,10 +1,11 @@
-#include <iostream>
 #include "Gaming_Hub.h"
+#include <iostream>
 #include <fstream>
 using namespace std;
 
 void Gaming_Hub::Conect_4()
 {
+    
     char arr[6][7];
     int row, col, i, j, r, k = 0,red=0,blue=0;
 
@@ -223,20 +224,23 @@ void Gaming_Hub::Conect_4()
 
         
     }
+    
 
 
     fstream readFile("sing in information.txt",ios::in);
     string name1,name2;
-    readFile.close();
+    getline(readFile,name1);
+    getline(readFile,name2);
+
     if(red==1){
-        cout<<"Red Player:"<<name2<< "Win By"<<count<< "Point"<<endl;
+        cout<<"Red Player:"<<name2<< "Win By"<<red<< "Point"<<endl;
 
     }
-    else{
-        cout<<"Blue Player:"<<name1<< "Win By"<<count<< "Point"<<endl;
+    else if(blue==1){
+        cout<<"Blue Player:"<<name1<< "Win By"<<blue<< "Point"<<endl;
     }
     readFile.close();
 
-
+cout<<red<<blue;
 
 }
