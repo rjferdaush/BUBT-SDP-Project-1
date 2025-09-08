@@ -1,19 +1,17 @@
-#include<bits/stdc++.h>
+#include<Gaming_Hub.h>
+#include<iostream>
 #include<fstream>
 using namespace std;
 
-int main(){
-    string name[2];
+void Gaming_Hub::Sign_In(){ 
+    string name1,name2;
+    cout<<"Enter 1st Player Name:";
+    cin>>name1;
+    cout<<"Enter 2nd Player Name:";
+    cin>>name2;
 
-    ofstream file ("sing in information.txt");
-    for(int i=0; i<2; i++){
-        cin>>name[i];
-    }
-
-    for(int i=0; i<2; i++){
-        file<<name[i]<<endl;
-    }
-
-    file.close();
+    ofstream singINfile("sing in information.txt",ios::out | ios::app);
+    singINfile<<name1<<count<<endl<<name2<<count<<endl;
+    singINfile.close();
 
 }

@@ -47,7 +47,7 @@ void Gaming_Hub::Conect_4()
             {
                 if (arr[i][j] == 'B' && arr[i][j + 1] == 'B' && arr[i][j + 2] == 'B' && arr[i][j + 3] == 'B')
                 {
-                    cout << "Blue Win";
+                    // cout << "Blue Win";
                     blue++;
                     return;
                 }
@@ -61,7 +61,7 @@ void Gaming_Hub::Conect_4()
             {
                 if (arr[i][j] == 'B' && arr[i + 1][j] == 'B' && arr[i + 2][j] == 'B' && arr[i + 3][j] == 'B')
                 {
-                    cout << "Blue Win";
+                    // cout << "Blue Win";
                     blue++;
                     return;
                 }
@@ -75,7 +75,7 @@ void Gaming_Hub::Conect_4()
             {
                 if (arr[i][j] == 'B' && arr[i + 1][j - 1] == 'B' && arr[i + 2][j - 2] == 'B' && arr[i + 3][j - 3] == 'B')
                 {
-                    cout << "Blue Win";
+                    // cout << "Blue Win";
                     blue++;
                     return;
                 }
@@ -89,7 +89,7 @@ void Gaming_Hub::Conect_4()
             {
                 if (arr[i][j] == 'B' && arr[i + 1][j + 1] == 'B' && arr[i + 2][j + 2] == 'B' && arr[i + 3][j + 3] == 'B')
                 {
-                    cout << "Blue Win";
+                    // cout << "Blue Win";
                     blue++;
                     return;
                 }
@@ -121,7 +121,7 @@ void Gaming_Hub::Conect_4()
             {
                 if (arr[i][j] == 'R' && arr[i][j + 1] == 'R' && arr[i][j + 2] == 'R' && arr[i][j + 3] == 'R')
                 {
-                    cout << "Red Win";
+                    // cout << "Red Win";
                     red++;
                     return;
                 }
@@ -136,7 +136,7 @@ void Gaming_Hub::Conect_4()
             {
                 if (arr[i][j] == 'R' && arr[i + 1][j] == 'R' && arr[i + 2][j] == 'R' && arr[i + 3][j] == 'R')
                 {
-                    cout << "Red Win";
+                    // cout << "Red Win";
                     red++;
                     return;
                 }
@@ -200,7 +200,7 @@ void Gaming_Hub::Conect_4()
             {
                 if (arr[i][j] == 'R' && arr[i + 1][j - 1] == 'R' && arr[i + 2][j - 2] == 'R' && arr[i + 3][j - 3] == 'R')
                 {
-                    cout << "Red Win";
+                    // cout << "Red Win";
                     red++;
                     return;
                 }
@@ -214,7 +214,7 @@ void Gaming_Hub::Conect_4()
             {
                 if (arr[i][j] == 'R' && arr[i + 1][j + 1] == 'R' && arr[i + 2][j + 2] == 'R' && arr[i + 3][j + 3] == 'R')
                 {
-                    cout << "Red Win";
+                    // cout << "Red Win";
                     red++;
                     return;
                 }
@@ -225,12 +225,17 @@ void Gaming_Hub::Conect_4()
     }
 
 
-    
+    fstream readFile("sing in information.txt",ios::in);
+    string name1,name2;
+    readFile.close();
     if(red==1){
-
-
+        cout<<"Red Player:"<<name2<< "Win By"<<count<< "Point"<<endl;
 
     }
+    else{
+        cout<<"Blue Player:"<<name1<< "Win By"<<count<< "Point"<<endl;
+    }
+    readFile.close();
 
 
 
