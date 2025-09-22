@@ -227,20 +227,33 @@ void Gaming_Hub::Conect_4()
     
 
 
+    // fstream readFile("sing in information.txt",ios::in);
+    // string name1,name2;
+    // getline(readFile,name1);
+    // getline(readFile,name2);
+
+    // if(red>blue){
+    //     cout<<"Red Player:"<<name2<< "Win By"<<red<< "Point"<<endl;
+
+    // }
+    // else{
+    //     cout<<"Blue Player:"<<name1<< "Win By"<<blue<< "Point"<<endl;
+    // }
+    // readFile.close();
+    
     fstream readFile("sing in information.txt",ios::in);
     string name1,name2;
     getline(readFile,name1);
     getline(readFile,name2);
-
-    if(red==1){
-        cout<<"Red Player:"<<name2<< "Win By"<<red<< "Point"<<endl;
+    readFile.close();
+    if(red>blue){
+        cout<<"Red Player:"<<name2<< "Win"<<red<< "Point"<<endl;
 
     }
-    else if(blue==1){
+    else{
         cout<<"Blue Player:"<<name1<< "Win By"<<blue<< "Point"<<endl;
     }
-    readFile.close();
+    
 
-cout<<red<<blue;
 
 }
