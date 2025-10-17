@@ -1,9 +1,6 @@
-#include "Gaming_Hub.h"
-#include <iostream>
-#include <fstream>
+#include <bits/stdc++.h>
 using namespace std;
-
-void Gaming_Hub::Leader_Bord()
+int main()
 {
     string name[50];
     int point[50], i = 0;

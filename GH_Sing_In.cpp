@@ -4,13 +4,15 @@
 using namespace std;
 
 void Gaming_Hub::Sign_In(){ 
-    string name1,name2;
-    cout<<"Enter 1st Player Name:";
-    cin>>name1;
-    cout<<"Enter 2nd Player Name:";
-    cin>>name2;
 
-    ofstream singINfile("sing in information.txt",ios::out | ios::app);
+    string name1,name2;
+    cout<<"\033[1;37mEnter 1st Player Name: \033[1;34m";
+    cin>>name1;
+    cout<<"\033[1;37mEnter 2nd Player Name: \033[1;31m";
+    cin>>name2;
+    cout<<"\033[0m";
+
+    ofstream singINfile("sing in information.txt",ios::out);
     singINfile<<name1<<endl<<name2<<endl;
     singINfile.close();
 

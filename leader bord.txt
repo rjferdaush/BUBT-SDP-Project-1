@@ -1,0 +1,8 @@
+jhumur 5
+ferdaush 2
+sadik 3
+sadika 4
+jhumur 5
+
+
+asd: 1
