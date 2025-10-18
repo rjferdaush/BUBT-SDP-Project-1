@@ -275,11 +275,4 @@ void Gaming_Hub::Conect_4()
         leader_bord<<name1<<": "<<blue<<endl;
     }
     leader_bord.close();
-
-
-
-
-    
-
-
 }

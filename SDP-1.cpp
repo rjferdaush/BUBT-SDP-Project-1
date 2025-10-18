@@ -63,7 +63,7 @@ int main()
         else if (num == 4)
         {
             system("cls || clear");
-            cout << "\033[1;32mAlhamdulillah\nThank You";
+            cout << "\033[1;32mAlhamdulillah Thank You\n";
             cout << "\033[1;33mDeveloped By \033[1;36mFerdaush & Sadik \033[1;33m \nCourse Instractor: \033[1;31m Mishal Al Rahman \033[0m \n\n";
 
             break;
